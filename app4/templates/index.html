@@ -1,0 +1,132 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>My Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <script src="https://kit.fontawesome.com/a074d054ca.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="{{url_for('static', filename='img/mug.jpg')}}" alt="">
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"> <a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"> <a href="#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"> <a href="#about" class="nav__link">About Me</a></li>
+                    <li class="nav__item"> <a href="#work" class="nav__link">My Work</a></li>
+                </ul>
+
+
+            </nav>
+        </button> 
+    </header>
+
+    <!--Introduction-->
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Hi, I am <strong> Johan Jigsved</strong>
+        </h1>
+        <p class="section_subtitle section__subtitle--intro">Enviormental Engineer</p>
+        <img src="{{url_for('static', filename='img/myFace.jpg')}}" alt="Johan Smiling pic" class="intro__img">
+
+
+    </section>
+
+<!--My services-->
+<section class="my-services" id="services">
+    <h2 class="section__title section__title-services">My Talents</h2>
+   <div class="services">
+        <div class="service">
+            <h3>Engeneering</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut voluptas quam ipsum excepturi saepe. Dolorem recusandae et impedit quo cupiditate quod natus esse corrupti. Laborum libero corrupti eaque facilis incidunt!</p>
+        </div><!--/service-->
+
+        <div class="service">
+            <h3>Programming</h3>
+            <p>Lorem ipsum dolor sit athrytjyrtjktyhjtughykjmh</p>
+        </div><!--/service-->
+
+        <div class="service">
+            <h3>French</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas doloremque sint eligendi voluptas maiores, beatae facere quod praesentium! Est quibusdam officiis et minus praesentium similique laborum animi rerum quia dicta.</p>
+        </div><!--/service-->
+    </div> <!--/serviceS-->
+    <a href="#work" class="btn"> My Work</a>
+</section>
+
+<!-- About Me-->
+<section class="about-me" id="about">
+    
+    <h2 class="section__title section__title--about">Who I am</h2>
+    <p class="section__subtitle section__subtitle--about"> Lorem ipsum dolor sit amet</p>
+
+    <div class="about-me__body"> 
+        <p> I am a dude Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero ipsum debitis saepe similique eius quos alias, tempora mollitia deserunt perspiciatis fugiat! Animi illum quis vero perferendis commodi perspiciatis, sint at?</p>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut esse, delectus dolorem voluptatum doloremque pariatur possimus maiores asperiores sed. Beatae eius perferendis voluptatum rerum repudiandae aliquid optio deleniti iste quia.</p>
+    </div>
+    <img src="{{url_for('static', filename='img/20211007_133526.jpg')}}" alt="" class="about_me-img">
+</section> 
+
+<!--My Work-->
+<section class="my-work" id="work">
+    <h2 class="section__title"> My Work</h2>
+    <p class="section__subtitle-work">A selection of my work</p>
+    <div class="portfolio">
+        <!--Portfolio Num 1-->
+        <a href="#" class="portfolio__item">
+            <img src="{{url_for('static', filename='img/pcBlur.jpg')}}" alt="" class="portfolio_img">
+        </a>
+
+         <!--Portfolio Num 2-->
+         <a href="#" class="portfolio__item">
+            <img src="{{url_for('static', filename='img/pcBlur.jpg')}}" alt="" class="portfolio_img">
+        </a>
+
+         <!--Portfolio Num 3-->
+         <a href="#" class="portfolio__item">
+            <img src="{{url_for('static', filename='img/pcBlur.jpg')}}" alt="" class="portfolio_img">
+        </a>
+
+         <!--Portfolio Num 4-->
+         <a href="#" class="portfolio__item">
+            <img src="{{url_for('static', filename='img/pcBlur.jpg')}}" alt="" class="portfolio_img">
+        </a>
+
+         <!--Portfolio Num 5-->
+         <a href="#" class="portfolio__item">
+            <img src="{{url_for('static', filename='img/pcBlur.jpg')}}" alt="" class="portfolio_img">
+        </a>
+
+         <!--Portfolio Num 6-->
+         <a href="#" class="portfolio__item">
+            <img src="{{url_for('static', filename='img/pcBlur.jpg')}}" alt="" class="portfolio_img">
+        </a>
+    </div>
+</section>
+
+<!-- Footer-->
+<footer class="footer">
+    <a href="" class="footer-link">johan.jigsved@yahoo.se </a>
+    <ul class="social-list">
+        <li class="social-list__item"> <a class="social-list__link" href="https://www.linkedin.com/in/johan-jigsved-540a26201/"><i class="fa-brands fa-linkedin-in"></i></li></a>
+        <li class="social-list__item"> <a class="social-list__link" href="https://www.github.com/johas97/">  <i class="fa fa-github"></i></li></a>
+
+
+    </ul>
+</footer>
+</body>
+
+
+
+</html>
