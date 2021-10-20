@@ -19,17 +19,18 @@
         </div>
         <button class="nav-toggle" aria-label="toggle navigation">
             <span class="hamburger"></span>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"> <a href="#home" class="nav__link">Home</a></li>
-                    <li class="nav__item"> <a href="#services" class="nav__link">My Services</a></li>
-                    <li class="nav__item"> <a href="#about" class="nav__link">About Me</a></li>
-                    <li class="nav__item"> <a href="#work" class="nav__link">My Work</a></li>
-                </ul>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"> <a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"> <a href="#services" class="nav__link">My Services</a></li>
+                <li class="nav__item"> <a href="#about" class="nav__link">About Me</a></li>
+                <li class="nav__item"> <a href="#work" class="nav__link">My Work</a></li>
+            </ul>
 
 
-            </nav>
-        </button> 
+        </nav>
+        
     </header>
 
     <!--Introduction-->
@@ -75,7 +76,7 @@
         <p> I am a dude Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero ipsum debitis saepe similique eius quos alias, tempora mollitia deserunt perspiciatis fugiat! Animi illum quis vero perferendis commodi perspiciatis, sint at?</p>
         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut esse, delectus dolorem voluptatum doloremque pariatur possimus maiores asperiores sed. Beatae eius perferendis voluptatum rerum repudiandae aliquid optio deleniti iste quia.</p>
     </div>
-    <img src="{{url_for('static', filename='img/20211007_133526.jpg')}}" alt="" class="about_me-img">
+    <img src="{{url_for('static', filename='img/johanBig.jpg')}}" alt="" class="about_me-img">
 </section> 
 
 <!--My Work-->
@@ -115,6 +116,20 @@
     </div>
 </section>
 
+<!-- Contact-->
+
+<section class="contact-me" id="contact">
+
+    <h2 class="section__title section__title--contact">Contact Me</h2>
+    <p class="section__subtitle section__subtitle--contact"> Fill out form to contact me via e-mail</p>
+
+    <div class="contact__body"> 
+        <p> I am a dude Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero ipsum debitis saepe similique eius quos alias, tempora mollitia deserunt perspiciatis fugiat! Animi illum quis vero perferendis commodi perspiciatis, sint at?</p>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut esse, delectus dolorem voluptatum doloremque pariatur possimus maiores asperiores sed. Beatae eius perferendis voluptatum rerum repudiandae aliquid optio deleniti iste quia.</p>
+    </div>
+
+</section>
+
 <!-- Footer-->
 <footer class="footer">
     <a href="" class="footer-link">johan.jigsved@yahoo.se </a>
@@ -125,6 +140,8 @@
 
     </ul>
 </footer>
+
+<script scr="{{url_for('static', filename='js/index.js')}}"></script>
 </body>
 
 

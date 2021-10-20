@@ -184,6 +184,10 @@ h3 { font-size: var(--fs-h3)}
     z-index: 1000;
 }
 
+.nav-open{
+    background: red;
+}
+
 .hamburger {
 
     display: block;
@@ -304,6 +308,8 @@ h3 { font-size: var(--fs-h3)}
     }
 }
 
+/*About me*/ 
+
 .about-me {
     max-width:1000px;
     margin:0 auto;
@@ -383,10 +389,14 @@ h3 { font-size: var(--fs-h3)}
     opacity: 0.60;
     
 }
+
+/* Contact form*/ 
+
+
 /* Footer*/
 .footer {
-    background: #111;
-    color:var(--clr-accent);
+    background: rgb(41, 0, 41);
+    color:var(--clr-light);
     text-align: center;
     padding: 2.5em 0;
     font-size: var(--fs-h3);
