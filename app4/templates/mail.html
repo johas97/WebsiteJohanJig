@@ -146,8 +146,7 @@
 
         <!--Grid column-->
         <div class="col-md-9 mb-md-0 mb-5">
-            <div id="error"></div>
-            <form id="contact-form" name="contact-form" action="/" method="GET">
+            <form id="contact-form" name="contact-form" action="mail" method="POST">
 
                 <!--Grid row-->
                 <div class="row-form">
@@ -187,7 +186,7 @@
                     <div class="col-md-12">
 
                         <div class="md-form">
-                            <textarea type="text" id="message" name="message" rows="3" class="form-control md-textarea"></textarea>
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
                             <label for="message">Message</label>
                         </div>
 
@@ -198,9 +197,7 @@
             </form>
 
             <div class="text-center text-md-left">
-              <!--  <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
-              --> 
-              <button type="submit" class ="btn"> Send</button>
+                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
             </div>
             <div class="status"></div>
         </div>
