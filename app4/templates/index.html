@@ -40,7 +40,7 @@
     <!--Introduction-->
     <section class="intro" id="home">
         <h1 class="section__title section__title--intro">
-            Hi, I am <strong> Johan Jigsved</strong>
+            Hi, I am <strong> Johan Jigsved </strong>
         </h1>
         <p class="section_subtitle section__subtitle--intro">Enviormental Engineer</p>
         <img src="{{url_for('static', filename='img/myFace.jpg')}}" alt="Johan Smiling pic" class="intro__img">
@@ -146,14 +146,14 @@
 
         <!--Grid column-->
         <div class="col-md-9 mb-md-0 mb-5">
-            <div id="error"></div>
-            <form id="contact-form" name="contact-form" action="/" method="GET">
+            <div id="error"> <p class="error_message">{{error_statment}}</p> </div>
+            <form id="contact-form" name="contact-form" action="/mail_sent" method="POST">
 
                 <!--Grid row-->
                 <div class="row-form">
 
                     <!--Grid column-->
-                    <div class="col-md-6">
+                    <div class="col-md-6">  
                         <div class="md-form mb-0">
                             <input type="text" id="name" name="name" class="form-control">
                             <label for="name" class="">Name</label>
@@ -200,7 +200,7 @@
             <div class="text-center text-md-left">
               <!--  <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
               --> 
-              <button type="submit" class ="btn"> Send</button>
+              <button type="submit" form="contact-form"  class ="btn"> Send</button>
             </div>
             <div class="status"></div>
         </div>

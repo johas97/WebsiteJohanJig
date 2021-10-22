@@ -451,6 +451,11 @@ textarea {
     border-radius: 4px;
 }
 
+.error_message{
+    background-color: var(--clr-accent);
+   
+    color:white;
+}
 
 /* Footer*/
 .footer {
